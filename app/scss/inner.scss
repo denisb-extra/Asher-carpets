@@ -1,0 +1,804 @@
+/* ---------------------- Section top-inner ---------------------- */
+section.top-inner {
+	background-image: url("../images/inner/bg-top-inner.jpg");
+	background-color: #a3312e;
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-top: 145px;
+	padding-bottom: 40px;
+	position: relative;
+
+	.title {
+		@include f-m;
+		font-size: 50px;
+		color: #fff;
+		margin: 0;
+	}
+	.breadcrumbs {
+		margin-top: 15px;
+	}
+	.line {
+		@include f-r;
+		font-size: 10px;
+		color: #fff;
+		
+		a {
+			@include f-r;
+			font-size: 15px;
+			color: #fff;
+			margin: 0 5px;
+		}
+		.breadcrumb_last {
+			@include f-m;
+			font-size: 15px;
+			color: #fff;
+			margin: 0 5px;
+		}
+	}
+
+	.stamps {
+		position: absolute;
+		left: 20px;
+		top: 50%;
+		//transform: translateY(-50%);
+		.stamp {
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 10px;
+		}
+	}
+
+	@media only screen and (max-width : 1200px) {
+		padding-top: 100px;
+		padding-bottom: 20px;
+		.title {
+			font-size: 40px;
+		}
+
+		.stamps {
+			.stamp {
+				img {
+					width: 80px;
+				}
+			}
+		}
+	}
+	@media only screen and (max-width : 650px) {
+		padding-top: 60px;
+		padding-bottom: 20px;
+		.title {
+			font-size: 30px;
+			line-height: 30px;
+		}
+
+		.stamps {
+			top: 10px;
+			left: 10px;
+			.stamp {
+				margin: 0 5px;
+				img {
+					width: 45px;
+				}
+			}
+		}
+	}
+}
+/* --------------------- /Section top-inner ---------------------- */
+
+/* ---------------------- Section content-parts ---------------------- */
+section.content-parts {
+	margin-top: 35px;
+	padding-bottom: 35px;
+	.parts {
+		display: flex;
+		flex-wrap: wrap;
+		font-size: 0;
+		width: 100%;
+	}
+	.part-half {
+		width: 50%;
+		margin-top: 35px;
+		img {
+			max-width: 100%;
+		}	
+	}
+
+	.part-full {
+		width: 100%;
+		margin-top: 35px;
+		img {
+			max-width: 100%;
+		}	
+	}
+	
+	.part-text {
+		&.text-right {
+			padding-left: 45px;
+		}
+		&.text-left {
+			padding-right: 45px;
+		}
+	}
+	.content {
+		@include f-r;
+		font-size: 17px;
+		color: #3b3b3b;
+		.title {
+			@include f-m;
+			font-size: 30px;
+			color: #3b3b3b;
+		}
+		strong {
+			@include f-b;
+			font-size: 18px;
+			color: #3b3b3b;
+		}
+
+		p {
+			margin-top: 20px;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+	
+
+	@media only screen and (max-width : 1000px) {
+		margin-top: 15px;
+		.parts {
+			.part-half {
+				width: 100%;
+			}
+			.part-image {
+				text-align: center;
+			}
+
+			.part-text {
+				&.text-right {
+					padding-left: 0px;
+				}
+				&.text-left {
+					padding-right: 0px;
+				}
+			}
+
+			&.text-left {
+				flex-direction: column-reverse;
+			}
+		}
+	}
+}
+/* --------------------- /Section content-parts ---------------------- */
+
+/* ---------------------- Section advantages-inner ---------------------- */
+section.advantages-inner {
+	padding: 75px 0;
+	background-color: #f8f8f8;
+	background-image: url("../images/index/el.svg");
+	background-repeat: no-repeat;
+	background-position: top left;
+	.boxes {
+		display: flex;
+		justify-content: space-around;
+		max-width: 100%;
+		.box {
+			margin: 0 20px;
+			display: block;
+			text-align: center;
+			.text {
+				@include f-m;
+				font-size: 24px;
+				color: #3b3b3b;
+				margin-top: 15px;
+			}
+		}	
+	}
+
+	@media only screen and (max-width : 1200px) {
+		.boxes {
+			max-width: 100%;
+			justify-content: center;
+			.box {
+				margin: 0 5%;
+			}
+		}
+	}
+
+	@media only screen and (max-width : 800px) {
+		.boxes {
+			.box {
+				margin: 0 5%;
+				.icon {
+					height: 60px;
+					img {
+						width: 50px;
+					}
+				}
+				.text {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+
+	@media only screen and (max-width : 600px) {
+		padding: 25px 0;
+		.boxes {
+			.box {
+				margin: 0 3%;
+				.icon {
+					height: 50px;
+					img {
+						width: 45px;
+					}
+				}
+				.text {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+/* --------------------- /Section advantages-inner ---------------------- */
+
+/* ---------------------- Section contact-inner ---------------------- */
+section.contact-inner {
+	margin-top: 45px;
+	padding-bottom: 35px;
+
+	.parts {
+		display: flex;
+		.part {
+			width: 50%;
+		}
+
+		@media only screen and (max-width : 1450px) {
+			.part {
+				img {
+					max-width: 100%;
+				}
+			} 
+		}
+
+		@media only screen and (max-width : 1200px) {
+			flex-wrap: wrap;
+			.part {
+				width: 100%;
+				padding: 0;
+			}
+		}
+	}
+
+	.part-contact {
+		padding-left: 20px;
+
+		.title {
+			@include f-m;
+			font-size: 22px;
+			color: #000;
+		}
+
+		.cols {
+			display: flex;
+			justify-content: space-between;
+			margin: 0 -15px;
+			margin-top: 30px;
+			margin-bottom: 75px;
+			.col {
+				margin: 0 15px;
+			}
+
+			@media only screen and (max-width : 650px) {
+				flex-direction: column;
+				margin-top: 30px;
+				margin-bottom: 45px;
+				.col {
+					margin: 5px 15px;
+				}
+			}
+		}
+	}
+	.part-image {
+		padding-right: 20px;
+	}
+	.wpcf7 {
+		margin-top: 30px;
+		position: relative;
+		text-align: left;
+		span.wpcf7-list-item {
+    		display: inline;
+    	}
+    	.wpcf7-form-control-wrap {
+			position: relative;
+		}
+		*[role="alert"] {
+			position: absolute;
+			right: 20px;
+			bottom: -30px;
+			@include f-r;
+			font-size: 14px;
+			color: #232323;
+			border: none;
+		}
+		
+		.text-info {
+			@include f-b;
+			font-size: 19px;
+			line-height: 35px;
+			color: #0b233e;
+			direction: rtl;
+			float: left;
+			padding-top: 10px;
+			padding-left: 10px;
+		}
+		form {
+			display: flex;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			font-size: 0;
+			margin: 0 -1%;
+		}
+		.part-right, .part-left {
+			width: 48%;		
+			margin: 1%;
+		}
+		input, textarea {
+			width: 100%;
+			@include f-m;
+			font-size: 17px;
+			color: #000;
+			border: none;
+			outline: none;
+			background: #e0e2e6;
+			border-radius: 10px;
+			padding: 25px 15px;
+			appearance: none;
+			-webkit-appearance: none;
+			@include placeholder-color(#0b233e);
+		}
+
+		textarea {
+			height: 241px;
+		}
+		input[type="submit"] {
+			@include f-m;
+			font-size: 17px;
+			color: #fff;
+			background-color: #f16f6f;
+			padding: 18px 55px;
+			cursor: pointer;
+			transition: 0.5s;
+			width: auto;
+			border-radius: 50px;
+			margin-top: 20px;
+			&:hover {
+				color: #f16f6f;
+				background-color: #fff;
+			}
+		}
+
+		.wpcf7-form-control-wrap {
+			display: block;
+			margin-top: 15px;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+		.wpcf7-list-item-label {
+			@include f-r;
+			font-size: 17px;
+			color: #0b233e;
+		}
+		.ajax-loader {
+			display: block;
+		}
+		
+	}
+	.waze {
+		text-align: center;
+		display: none;
+		margin-top: 25px;
+	}
+	@media only screen and (max-width : 1200px) {
+		background-size: 50%;
+	}
+	@media only screen and (max-width : 650px) {
+		
+		.wpcf7 {
+			padding-left: 10px;
+			form {
+				flex-wrap: wrap;
+			}
+			input[type="submit"] {
+				width: 100%;
+				max-width: 100%;
+			}
+			.part-right, .part-left {
+				width: 100%;		
+				margin: 1%;
+			}
+		}
+		.waze {
+			text-align: center;
+			display: block;
+		}
+	}
+
+
+}
+/* --------------------- /Section contact-inner ---------------------- */
+
+/* ---------------------- Section price-title ---------------------- */
+section.price-title {
+	margin-top: 40px;
+	filter: drop-shadow(0px 12px 9px rgba(0, 0, 0, 0.25));
+	.boxes {
+		display: flex;
+		justify-content: space-around;
+		background: #5f80cc;
+		.box {
+			padding: 20px;
+			padding-top: 10px;
+			background: #5f80cc;
+			text-align: center;
+			cursor: pointer;
+			transition: 0.5s;
+			position: relative;
+			&:hover {
+				background: #f16f6f;
+			}
+			span {
+				@include f-m;
+				font-size: 24px;
+				color: #fff;
+				text-align: center;
+			}
+			i {
+				color: #fff;
+				font-size: 13px;
+				position: absolute;
+				left: 50%;
+				bottom: 7px;
+				transform: translateX(-50%);
+				transition: 0.5s;
+			}
+
+			&:hover {
+				i {
+					bottom: 3px;
+				}
+			}
+		}	
+	}
+
+	@media only screen and (max-width : 1200px) {
+		.boxes {
+			justify-content: center;
+			margin: 0 -10px;
+			.box {
+
+				margin: 0 10px;
+				span {
+					font-size: 20px;
+				}
+			}	
+		}
+	}
+
+	@media only screen and (max-width : 650px) {
+		margin-top: 15px;
+		.boxes {
+			justify-content: center;
+			margin: 0 -5px;
+			.box {
+				padding: 5px;
+				margin: 0 5px;
+				width: 30%;
+				span {
+					font-size: 14px;
+					display: inline-block;
+					height: 50px;
+				}
+			}	
+		}
+	}
+}
+/* --------------------- /Section price-title ---------------------- */
+
+/* ---------------------- Section price-table ---------------------- */
+section.price-table {
+	margin-top: 60px;
+	padding-bottom: 45px;
+	.title {
+		@include f-m;
+		font-size: 30px;
+		color: #3b3b3b;
+		text-align: center;
+	}
+	table {
+		width: 100%;
+		border-spacing: 0px;
+		text-align: left;
+		margin-top: 40px;
+		th {
+			@include f-b;
+			font-size: 18px;
+			color: #fff;
+			text-align: center;
+			padding: 20px;
+			background: #5f80cc;
+			text-transform: uppercase;
+		}
+		tr {
+			
+			&:nth-child(even) {
+				background: #e1e3e6;
+			}
+			td {
+				padding: 10px;
+				@include f-m;
+				font-size: 18px;
+				color: #181818;
+				text-align: center;
+				transition: 0.5s;
+				text-transform: uppercase;
+
+				&:first-child {
+					@include f-b;
+					font-size: 18px;
+					color: #fff;
+					text-align: center;
+					padding: 20px;
+					background: #5f80cc;
+				}
+			}
+		}
+	}
+
+	.notes {
+		margin-top: 45px;
+		p {
+			@include f-m;
+			font-size: 18px;
+			color: #f16f6f;
+			margin-top: 10px;
+		}
+	}
+
+	@media only screen and (max-width: 650px) {
+		margin-top: 35px;
+		.title {
+			font-size: 24px;
+		}
+		/* Force table to not be like tables anymore */
+		.no-more-tables table, 
+		.no-more-tables thead, 
+		.no-more-tables tbody, 
+		.no-more-tables th, 
+		.no-more-tables td, 
+		.no-more-tables tr { 
+			display: block; 
+		}
+	 	
+	 	table {
+	 		margin-top: 15px;
+
+	 		th {
+	 			font-size: 14px;
+
+	 		}
+	 		tr {
+	 			padding: 5px;
+				margin-top: 8px;
+	 			td {
+					font-size: 14px;
+					padding: 3px 5px;
+
+					&:first-child {
+						@include f-b;
+						font-size: 16px;
+						color: #fff;
+						text-align: center;
+						padding: 10px;
+						margin: -5px;
+						margin-bottom: 10px;
+					}
+				}
+	 		}
+			
+	 	}
+		 
+		/* Hide table headers (but not display: none;, for accessibility) */
+		.no-more-tables thead tr { 
+			position: absolute;
+			display: none;
+		}
+	 
+		
+	 
+		.no-more-tables td { 
+			/* Behave  like a "row" */
+			border: none;
+			position: relative;
+			white-space: normal;
+			text-align: left;
+			padding-left: 15px;
+		}
+
+
+	 
+		.no-more-tables td:before { 
+			/* Now like a table header */
+			//position: absolute;
+			/* Top/left values mimic padding */
+			width: 45%; 
+			white-space: nowrap;
+			display: inline-block;
+			float: right;
+			text-align: right;
+
+
+		}
+
+		.no-more-tables td:first-child:before {
+			display: none;
+		}
+
+
+		/*
+		Label the data
+		*/
+		.no-more-tables td:before { content: attr(data-title); }
+
+		.notes {
+			margin-top: 25px;
+			p {
+				@include f-m;
+				font-size: 15px;
+				color: #f16f6f;
+				margin-top: 10px;
+			}
+		}
+	}
+}
+/* --------------------- /Section price-table ---------------------- */
+
+/* ---------------------- Section button-center ---------------------- */
+section.button-center {
+	text-align: center;
+	padding-bottom: 35px;
+	.button {
+		@include f-m;
+		font-size: 14px;
+		color: #fff;
+		background: #f16f6f;
+		border: 3px solid #f16f6f;
+		display: inline-block;
+		padding: 15px 35px;
+		border-radius: 50px;
+		margin-top: 25px;
+		cursor: pointer;
+		transition: 0.5s;
+		display: inline-block;
+
+		&:hover {
+			background: #fff;
+			color: #f16f6f;
+		}
+	}
+}
+/* --------------------- /Section button-center ---------------------- */
+
+/* ---------------------- Section big-text ---------------------- */
+section.big-text {
+	text-align: center;
+	background: #5f80cc;
+	padding: 55px 0;
+	.text {
+		@include f-b;
+		font-size: 30px;
+		color: #fff;
+		a {
+			color: #fff;
+			white-space: nowrap;
+		}
+	}
+
+	@media only screen and (max-width : 850px) {
+		padding: 25px 0;
+		.text {
+			@include f-b;
+			font-size: 20px;
+			color: #fff;
+		}
+	}
+}
+/* --------------------- /Section big-text ---------------------- */
+
+/* ---------------------- Section before-after ---------------------- */
+section.before-after {
+	margin-top: 55px;
+	padding-bottom: 55px;
+	.slider {
+		.item {
+			font-size: 0;
+			.box {
+				display: inline-block;
+				vertical-align: top;
+				width: 50%;
+			}
+
+			.inner {
+				padding: 0 10px;
+
+				.box {
+					padding: 0 5px;
+					.text {
+						background: #5f80cc;
+						text-align: center;
+						padding: 5px;
+						width: 100%;
+						span {
+							@include f-m;
+							font-size: 24px;
+							color: #fff;
+
+							@media only screen and (max-width : 740px) {
+								font-size: 20px;
+							}
+						}
+					}
+
+					.image {
+						margin-top: 10px;
+						img {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* --------------------- /Section before-after ---------------------- */
+
+/* ---------------------- Section content-simple ---------------------- */
+section.content-simple {
+	padding: 60px 0;
+
+	.title {
+		 @include f-m;
+		 font-size: 30px;
+		 color: #3b3b3b;
+	}
+
+	.content {
+		@include f-r;
+		font-size: 17px;
+		color: #3b3b3b;
+		margin-top: 25px;
+		column-count: 2;
+		column-gap: 40px;
+		p {
+			margin-top: 15px;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+
+	@media only screen and (max-width : 750px) {
+		padding: 35px 0;
+		.title {
+			font-size: 24px;
+		}
+		.content {
+			font-size: 16px;
+			margin-top: 15px;
+			column-count: 1;
+		}
+
+	}
+}
+/* --------------------- /Section content-simple ---------------------- */
+
